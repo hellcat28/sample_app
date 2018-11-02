@@ -40,7 +40,13 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (8.0.0)
+    autoprefixer-rails (9.3.1)
+      execjs
+    bcrypt (3.1.12)
     bindex (0.5.0)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.2)
@@ -57,6 +63,9 @@ GEM
     execjs (2.7.0)
     ffi (1.9.25)
     formatador (0.2.5)
+    foundation-rails (5.4.5.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     guard (2.13.0)
@@ -137,6 +146,7 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_layout (1.0.42)
     railties (5.1.6)
       actionpack (= 5.1.6)
       activesupport (= 5.1.6)
@@ -197,8 +207,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (= 3.1.12)
+  bootstrap-sass (= 3.3.7)
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
+  foundation-rails
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   jbuilder (= 2.7.0)
@@ -210,6 +223,7 @@ DEPENDENCIES
   puma (= 3.9.1)
   rails (= 5.1.6)
   rails-controller-testing (= 1.0.2)
+  rails_layout
   sass-rails (= 5.0.6)
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
